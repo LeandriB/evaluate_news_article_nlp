@@ -45,6 +45,7 @@ Start up the server in the terminal using ```npm run start``` and open the web p
 ## Project Screenshots
 
 ![Project Preview](/img/news1.png)
+![Output Preview](/img/output.png)
 
 ## Attributions
 

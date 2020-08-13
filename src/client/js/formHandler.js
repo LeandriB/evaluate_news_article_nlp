@@ -6,7 +6,7 @@ import swal from 'sweetalert';
 async function handleSubmit(event) {
     event.preventDefault()
 
-     // User input res
+     // User input
     const formValue = document.getElementById('value').value
 
     if(Client.evaluate(formValue)) {

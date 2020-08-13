@@ -6,7 +6,7 @@ import swal from 'sweetalert';
 async function handleSubmit(event) {
     event.preventDefault()
 
-     // User input data
+     // User input res
     const formValue = document.getElementById('value').value
 
     if(Client.evaluate(formValue)) {
@@ -21,27 +21,21 @@ async function handleSubmit(event) {
                 input: {
                     url: formValue}
                 }),
-        }).then(res => {
-            let post = res.json();
-            return post
+        }).then(data => data.json())
+        .then(function(data) {
+            console.log(data);
+            document.querySelector('.score').innerHTML = "Polarity: " + polarity(data.score_tag);
+            document.querySelector('.agreement').innerHTML = "Sentiments: " + data.agreement;
+            document.querySelector('.subjectivity').innerHTML = "Subjectivity: " + data.subjectivity;
+            document.querySelector('.irony').innerHTML = "Irony: " + data.irony;
+            document.querySelector('.confidence').innerHTML = "Confidence: " + data.confidence + "%";
         }).catch((error) => {
             console.log('error', error);
         });
-        console.log(response);
-        updateUI(response);
     } else {
         // Sweetalert for a modal pop up
         swal("ERROR", "Invalid URL");
     }
-};
-
-
-function updateUI(data) {
-    document.querySelector('.score').innerHTML = "Polarity: " + polarity(data.score_tag);
-    document.querySelector('.agreement').innerHTML = "Sentiments: " + data.agreement;
-    document.querySelector('.subjectivity').innerHTML = "Subjectivity: " + data.subjectivity;
-    document.querySelector('.irony').innerHTML = "Irony: " + data.irony;
-    document.querySelector('.confidence').innerHTML = "Confidence: " + data.confidence + "%";
 };
 
 function polarity(score) {

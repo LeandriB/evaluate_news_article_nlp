@@ -30,7 +30,6 @@ app.use(cors());
 const fetch = require('node-fetch');
 
 // Declare Meaningcloud API credentials
-// 'https://api.meaningcloud.com/sentiment-2.1?key=${apiKey}&of=json&txt=${text}&lang=en'
 const baseURL = 'https://api.meaningcloud.com/sentiment-2.1?key=';
 const params = '&of=json&lang=en&url=';
 const apiKey = process.env.API_KEY;

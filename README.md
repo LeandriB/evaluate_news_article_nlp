@@ -56,6 +56,7 @@ Start up the server in the terminal using ```npm run start``` and open the web p
 * Regular Expressions for a [URL](https://regexr.com/39nr7)
 * Understanding [regex](https://www.youtube.com/watch?v=6-5Se9Ym1E4)
 * Hide Results until button click via [Stackoverflow](https://stackoverflow.com/questions/56111480/how-can-i-hide-a-div-until-a-button-is-clicked)
+* Javascript [switch](https://javascript.info/switch) statements
 * [Jest](https://www.valentinog.com/blog/jest/) for beginners
 * Getting started with [Jest](https://jestjs.io/docs/en/getting-started)
 * Home-Image from [Jason Leung](https://unsplash.com/photos/0sBTrm726C8) via Unsplash.

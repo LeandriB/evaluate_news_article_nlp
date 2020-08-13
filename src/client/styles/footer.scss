@@ -1,0 +1,17 @@
+$primary-color: #f7f7f7;
+$secondary-color: #fe81a6;
+$color-light: #83817fa8;
+$color-dark: #000;
+
+footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.footer-text {
+    margin-right: 40rem;
+    color: $color-light;
+}

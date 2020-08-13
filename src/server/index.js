@@ -57,7 +57,7 @@ app.post('/post', addData);
 // POST Route adds data to projectData
 async function addData(request, response) {
     // Retrieve URL
-    projectData = request.body.url;
+    projectData = request.body.input.url;
     console.log("User input: ", projectData);
     const getData = await fetch(baseURL+apiKey+params+projectData)
     .then( (getData) => getData.json())
